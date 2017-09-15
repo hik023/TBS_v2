@@ -4,7 +4,7 @@ from settings import DOMAIN
 from ITMM_parser import ITMM_parser
 import telebot
 
-
+kok = ""
 
 bot = telebot.TeleBot('437760257:AAGwqpugwb57C0aXbVJrJrxb0pdbxV1RGxI')
 prsr = ITMM_parser(DOMAIN)
