@@ -4,8 +4,6 @@ from settings import DOMAIN
 from ITMM_parser import ITMM_parser
 import telebot
 
-kok = ""
-
 bot = telebot.TeleBot('437760257:AAGwqpugwb57C0aXbVJrJrxb0pdbxV1RGxI')
 prsr = ITMM_parser(DOMAIN)
 
@@ -25,6 +23,7 @@ def update_schedule(message):
     keyboard.row('Обновить')
     prsr = ITMM_parser(DOMAIN)
     page = prsr.getpage()
+    print("btn pushed!")
     link = prsr.parse2(page)
     if prsr.update(link) == 1:
         for id in prsr.dispatch():
