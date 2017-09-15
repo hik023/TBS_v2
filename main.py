@@ -45,7 +45,7 @@ def get_schedule(message):
 
 if __name__ == '__main__':
 
-    bot.polling()
+    bot.polling(timeout=100)
     # prsr = ITMM_parser(DOMAIN)
     # page = prsr.getpage()
     # link = prsr.parse2(page)
